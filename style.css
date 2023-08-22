@@ -1,0 +1,212 @@
+:root {
+  --primary-color: #4caf4f;
+  --color-text: rgba(77, 77, 77, 1);
+  --neutral-l-grey: #89939e;
+  --neutral-black: #263238;
+  --text-gray-300: #d9dbe1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.Name-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-link {
+  position: relative;
+}
+
+.nav-link:hover {
+  /*text-decoration: underline;
+  border-bottom: 2px solid #ff0000;
+      */
+}
+
+.nav-link::after {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+.nav-link:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+  transition: 0.5s ease-out;
+}
+.btn_register {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  align-items: center;
+}
+.btn_registers,
+.btn_loadmore {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  align-items: center;
+}
+.btn_registers:hover {
+  opacity: 0.9;
+}
+.btn_register:hover {
+  opacity: 0.9;
+}
+#icons_right {
+  padding: 0px 0.7rem;
+}
+.img-hero {
+  width: 80%;
+}
+.title-hero {
+  color: rgba(77, 77, 77, 1);
+  font-size: 3rem;
+}
+.title-second {
+  color: var(--primary-color);
+  font-size: 50px;
+}
+.text-pricing {
+  color: var(--color-text);
+  line-height: 1px;
+}
+.icon {
+  background-color: #e8f5e9;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4px;
+  display: inline-flex;
+  text-align: center;
+}
+.topic {
+  font-size: 3rem;
+  color: rgba(77, 77, 77, 1);
+}
+.card-help {
+  background-color: #f5f7fa;
+  width: 100%;
+}
+.text1-help {
+  color: rgba(77, 77, 77, 1);
+}
+.text2-help {
+  color: #4caf4f;
+  font-size: 2rem;
+}
+.Img_tesla {
+  width: 290px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.Img_tesla:hover {
+  transform: scale(0.9);
+}
+.lead {
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.meet-all {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.meet-all:hover {
+  transform: scale(0.9);
+}
+.card-text {
+  color: var(--neutral-l-grey);
+  font-size: 0.8rem;
+}
+.card-title {
+  color: var(--primary-color);
+}
+.card-img-top {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.card-img-top:hover {
+  transform: scale(0.9);
+  border: 2px #4caf4f solid;
+}
+.card-end {
+  background: var(--neutral-silver, #f5f7fa);
+  height: 40vh;
+}
+.Content-end {
+  font-size: 3rem;
+  color: rgba(38, 50, 56, 1);
+}
+.footers {
+  background-color: var(--neutral-black);
+  height: 50vh;
+  width: 100%;
+  color: #fff;
+}
+ul {
+  list-style: none;
+  padding: 2px;
+}
+li {
+  padding: 10px;
+}
+li a {
+  text-decoration: none;
+  opacity: 0.8;
+  padding: 10px 0px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+li a:hover {
+  color: var(--primary-color);
+}
+.input-group .type {
+  background-color: var(--neutral-l-grey);
+  color: #fff;
+}
+.icons-social img {
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.icons-social img:first-child:hover {
+  background: linear-gradient(
+    to right,
+    rgb(138, 35, 135),
+    rgb(233, 64, 87),
+    rgb(242, 113, 33)
+  );
+}
+.icons-social img:nth-child(2):hover {
+  background-color: #ffb442;
+}
+.icons-social img:nth-child(3):hover {
+  background-color: #40a5fe;
+}
+.icons-social img:nth-child(4):hover {
+  background-color: #ff3251;
+}
